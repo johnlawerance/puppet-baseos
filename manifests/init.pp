@@ -1,0 +1,4 @@
+class baseos {
+
+  include epel
+}
