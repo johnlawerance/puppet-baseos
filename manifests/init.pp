@@ -9,7 +9,7 @@ class baseos {
 
   # Install users
   $users = hiera_hash('users')
-  create_resources('@user', $users)
+  create_resources('user', $users)
   $groups = hiera_hash('groups')
-  create_resources('@group', $groups)
+  create_resources('group', $groups)
 }
